@@ -1,0 +1,24 @@
+{
+  "params":
+  {
+   "local_server": true,
+    "local_uri":"mysql+mysqlconnector://root:@localhost/test",
+    "production_uri":"mysql+mysqlconnector://root:@localhost/test",
+    "fb_url": "https://facbook.com/leraning",
+    "tw_url": "https://twitter.com/leraning",
+    "gh_url": "https://github.com/leraning",
+    "blog_name":"learning",
+    "tag_line": "",
+    "title": "",
+    "hedline": "",
+   "no_of_posts": 2,
+    "mail_user": "aaaars2020@gmail.com",
+    "mail_pass": "Akshay@123",
+    "login_img":"bootstrap-logo.svg",
+    "admin_user": "admin",
+    "admin_pass": "admin",
+   "upload_location":"F:\\akshay\\ak"
+
+  }
+
+}
