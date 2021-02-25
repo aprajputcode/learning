@@ -2,8 +2,8 @@
   "params":
   {
    "local_server": true,
-    "local_uri":"mysql+mysqlconnector://root:@localhost/test",
-    "production_uri":"mysql+mysqlconnector://root:@localhost/test",
+    "local_uri":"mysql+mysqlconnector://root:@localhost/learningpoint",
+    "production_uri":"mysql+mysqlconnector://root:@localhost/learningpoint",
     "fb_url": "https://facbook.com/leraning",
     "tw_url": "https://twitter.com/leraning",
     "gh_url": "https://github.com/leraning",
@@ -11,7 +11,13 @@
     "tag_line": "",
     "title": "",
     "hedline": "",
-   "no_of_posts": 2,
+   "home_page_hedline": "hedline here",
+   "home_page_subhedline": "subhedline",
+   "home_page_title": "lang",
+   "home_img": "home-bg.jpg",
+   "about_summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!",
+
+   "no_of_posts": 1,
     "mail_user": "mailid",
     "mail_pass": "password",
     "login_img":"bootstrap-logo.svg",

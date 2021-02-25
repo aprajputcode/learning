@@ -2,14 +2,14 @@
 {% block body %}
 
   <!-- Page Header -->
-  {% set fname='img/'+post.lang_photo %}
+  {% set fname='img/java.jpg' %}
     <header class="masthead" style="background-image: url('{{url_for('static',filename=fname)}}')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>{{post.languag}}</h1>
+            <h1>{{posts.languagsubpoint}}</h1>
             <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
             <span class="meta">Posted by
               <a href="#">Start Bootstrap</a>
@@ -25,29 +25,26 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>{{post.description[0:300]}}</p>
+          <p>{{posts.subdescription[0:300]}}</p>
 
-          <p>{{post.description[300:600]}}</p>
+          <p>{{posts.subdescription[300:600]}}</p>
+          <p>{{posts.subdescription[600:900]}}</p>
 
-          <p>{{post.description[600:900]}}</p>
-
-          <p>{{post.description[900:1200]}}</p>
-
-
-          <p>{{post.description[1200:1500]}}</p>
+          <p>{{posts.subdescription[900:1200]}}</p>
 
 
+          <p>{{posts.subdescription[1200:1500]}}</p>
 
+          <h4>Program</h4>
+          {% for x in x %}
+          {{x}}
 
-          {% for posts in posts %}
+          {% endfor%}
+          
 
+          <h4>Example</h4>
 
-          <li> <a href="/posts/{{posts.sno}}"><b>{{posts.languagsubpoint}}</b></a>
-            <hr></li>
-
-          {% endfor %}
-
-  
+          {{posts.example}}
          
 
 

@@ -32,38 +32,62 @@
        <form name="sentMessage" id="contactForm" novalidate action="/edit/{{sno}}" method="post">
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
-              <label>Title</label>
-              <input type="text" class="form-control" placeholder="Title" id="title" name='title' required data-validation-required-message="Please enter your name." value="{{post.title}}">
+              <label>Point Name</label>
+              <input type="text" class="form-control" placeholder="Point-Name" id="point" name='point' required data-validation-required-message="Please enter your name." value="{{post.languagsubpoint}}">
               <p class="help-block text-danger"></p>
             </div>
           </div>
+
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
-              <label>Tagline</label>
-              <input type="text" class="form-control" placeholder="Tagline" id="tline" name='tline' required data-validation-required-message="Please enter your email address." value="{{post.tagline}}">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Slug</label>
-              <input type="text" class="form-control" placeholder="Slug" id="slug" name='slug' required data-validation-required-message="Please enter your phone number." value="{{post.slug}}">
+              <input type="text" class="form-control" placeholder="slug" id="slug" name='slug' required data-validation-required-message="Please enter your name." value="{{post.slug}}">
               <p class="help-block text-danger"></p>
             </div>
           </div>
-          <div class="control-group">
-            <div class="form-group floating-label-form-group controls">
-              <label>Content</label>
-              <textarea rows="5" class="form-control" placeholder="Content" id="content " name='content' required data-validation-required-message="Please enter a message." >{{post.content}}</textarea>
-              <p class="help-block text-danger"></p>
-            </div>
+
             <div class="control-group">
             <div class="form-group floating-label-form-group controls">
-              <label>Image File</label>
-              <input class="form-control" placeholder="Image File" id="img_file " name='img_file' value="{{post.img_file}}">
+              <label>Content</label>
+              <textarea rows="5" class="form-control" placeholder="Content" id="content " name='content' required data-validation-required-message="Please enter a message." >{{post.subdescription}}</textarea>
               <p class="help-block text-danger"></p>
             </div>
           </div>
+
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Program</label>
+              <textarea rows="5" class="form-control" placeholder="program" id="program " name='program' required data-validation-required-message="Please enter a message." >{{post. program}}</textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Example</label>
+              <input type="text" class="form-control" placeholder="example" id="example" name='example' required data-validation-required-message="Please enter your phone number." value="{{post.example}}">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Writer</label>
+              <input type="text" class="form-control" placeholder="writer" id="writer" name='writer' required data-validation-required-message="Please enter your email address." value="{{post.whoissinsertthisdata}}">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Image File</label>
+              <input  class="form-control" placeholder="Image-File" id="imgfile " name='imgfile' value="{{post.imgfile}}">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          
+          
+            
           <br>
           <div id="success"></div>
           <button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button>
